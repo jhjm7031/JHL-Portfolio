@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jung Hwan Lee Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <h1>Jung Hwan Lee (JHL)</h1>
-        <p>Data Scientist & Machine Learning Enthusiast</p>
+        <h1>Jung Hwan Lee's Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <section id="summary">
-        <!-- Stock-style metrics like ROE, PER, PBR -->
-        <div class="metric">ROE: 85%</div>
-        <div class="metric">PER: 1.8</div>
-        <div class="metric">PBR: 2.5</div>
+
+    <section class="metrics">
+        <h2>My Key Metrics</h2>
+        <div class="metric" id="per">PER: 20</div>
+        <div class="metric" id="pbr">PBR: 1.8</div>
+        <div class="metric" id="roe">ROE: 15%</div>
     </section>
-    <section id="charts">
-        <!-- Placeholder for Experience Growth Chart -->
+
+    <section class="charts">
+        <h2>Skills and Experience</h2>
+        <div id="chartContainer">
+            <canvas id="skillsChart"></canvas>
+        </div>
     </section>
-    <section id="skills-projects">
-        <!-- Skills and Projects with tabs or cards -->
-    </section>
-    <section id="testimonials">
-        <!-- Market Sentiment (Feedback/Testimonials) -->
-    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
